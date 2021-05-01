@@ -1,0 +1,7 @@
+@import '../theme.scss';
+
+:host {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

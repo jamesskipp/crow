@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crow';
+  title = 'Progromeetr';
+  isNavMenuHidden = true;
+  isUserMenuHidden = true;
+
+  toggleNavMenu(): void {
+    this.isUserMenuHidden = true;
+    this.isNavMenuHidden = !this.isNavMenuHidden;
+  }
+
+  toggleUserMenu(): void {
+    this.isNavMenuHidden = true;
+    this.isUserMenuHidden = !this.isUserMenuHidden;
+  }
 }
